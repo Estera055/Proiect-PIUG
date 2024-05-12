@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <title>Design your home</title>
+        
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="img/logo-removebg.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fas fa-arrow-right" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">ACASA</a></li>
+                        <li><a href="about-us.html">DESPRE NOI</a></li>
+                        <li><a href="arhitectura.html">ARHITECTURA</a></li>
+                        <li><a href="design.html">DESIGN</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fas fa-list" onclick="showMenu()"></i>
+
+            </nav>
+            <h1>Proiecte arhitectura</h1>
+        </section>
+        <section class="Proiect">
+            <div class="rowo">
+            <img src="img/proiect1.jpg">
+            <div class="proiectul">
+                
+                <h2>Casa cu etaj</h2>
+                <p>Această casă modernă cu etaj împletește funcționalitatea cu design-ul minimalist. 
+                Spațiile luminoase ale parterului integrează living-ul, bucătăria și zona de luat masa.</p>
+                <p>La etaj , găsim dormitoarele spațioase ce oferă intimitate și relaxare. De asemenea, cele două balcoane din dormitoarele
+                devin o extensie naturală a spațiului de trai</p>
+                <p>Spatiu util P+1E: 132 mp</p>
+            </div></div>
+        <div class="rowo">
+            <img src="img/proiect2.jpg">
+            <div class="proiectul">
+                
+                <h2>Rezidenta Suncrest</h2>
+                <p>Cu inima casei dedicată spațiilor principale de locuit - 
+                living, sufragerie și bucătărie - un aripă dedicată dormitorului 
+                principal, băii și unui birou, și o a doua aripă dedicată dormitoarelor și 
+                spațiilor sociale pentru copii și oaspeți, proprietarii au fost deosebit de încântați de modul în care metrii pătrați au fost împărțiți. Piatra corală rugoasă, lemnurile calde și ferestrele de bronz sunt câteva dintre detaliile care dau acestei 
+                case moderne tropicale mult caracter - fără a mai menționa terasa 
+                mare a piscinei,
+                înconjurată de terase acoperite și, dincolo de acestea, o cabană separată cu un studio de yoga.</p>
+                <p>Spatiu util P: 539 mp</p>
+            </div>
+        </div>
+        <div class="rowo">
+            <img src="img/proiect3.jpg">
+            <div class="proiectul">
+                
+                <h2>Casa Riviera Nayarit</h2>
+                <p>Proiectul a fost inspirat de grandoarea și eleganța unui iaht, căutând să integreze elementele estetice și arhitecturale ale acestuia în designul locuinței. 
+                    O atentă analiză a aerodinamicii, circulației și vizualizării prezente în aceste ambarcațiuni de lux a condus la o integrare precisă în proiect. </p>
+                <p>
+                    Liniile fluide, senzația de mișcare și sofisticarea caracteristice designului iahturilor au fost studiate cu atenție și transpuse în arhitectura casei, creând o continuitate vizuală între cele două. Stilul arhitectural contemporan al casei se bazează pe două volume principale paralele, conectate printr-un coridor lung. 
+                    Această separare a volumelor permite oferirea unor vederi similare către fiecare spațiu interior, atât pe cele două nivele. Coridorul servește ca ax central de circulație și intrare principală pe nivelul superior al casei, facilitând o călătorie fluidă care încadrează o vedere la mare încă de la intrarea în casă.</p>
+                <p>Spatiu util P+1E+1T: 1480 mp</p>
+            </div>
+        </div>
+            
+
+        </section>
+        <section class="footer">
+            <h4>Despre noi</h4>
+            <div class="icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </section>
+        <script>
+            var navLinks=document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right="0";
+            }
+            function hideMenu(){
+                navLinks.style.right="-200";
+            }
+        </script>
+    </body>
+</html>

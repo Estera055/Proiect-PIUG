@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <title>Design your home</title>
+        
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="img/logo-removebg.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fas fa-arrow-right" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">ACASA</a></li>
+                        <li><a href="about-us.html">DESPRE NOI</a></li>
+                        <li><a href="arhitectura.html">ARHITECTURA</a></li>
+                        <li><a href="design.html">DESIGN</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fas fa-list" onclick="showMenu()"></i>
+
+            </nav>
+            <h1>Despre noi</h1>
+        </section>
+        <section class="about-us">
+            <div class="row">
+                <div class="principalul">
+                <h1>Una dintre cele mai cautate companii de design si arhitectura</h1>
+                <p>Prin compania "Design Your Home", ce am fondat-o în 2010, am redefinit standardele în industria imobiliare prin inovație și creativitate. Pe parcurs, "Design Your Home" a ajuns renumită pentru excelența adusă 
+                    în proiectarea și amenajarea spațiilor rezidențiale cât și comerciale. Cu un portofoliu impresionant de proiecte finalizate și o echipă de experți în arhitectură și design, ne angajăm să transformăm viziunile clienților noștri în realitate.</p>
+                    <a href="" class="button redb">Portofoliul nostru!</a>
+                
+                 </div>
+               <img src="img/team.jpg">
+            </div>
+        </section>
+        <section class="specialisti">
+            <div class="carousel">
+                <button id="prevButton">&lt;</button>
+                <div class="slide"><h1>Pasare Andreea-Designer de interior</h1>
+                <p>Andreea este o prezență vitală în echipa "Design my home" începând din 2019, aducând cu ea nu doar expertiză în domeniul design-ului, 
+                    ci și o pasiune profundă pentru estetica vintage. De fiecare dată când este implicată într-un proiect, 
+                    Andreea își aduce contribuția distinctivă, îmbinând metodele tradiționale cu elementele moderne pentru a crea spații care emană farmecul și eleganța epocilor trecute.</p>
+                <p>De-a lungul anilor, Andreea a demonstrat abilitatea sa de a integra elemente vintage în proiecte moderne, adaptându-se nevoilor și preferințelor
+                     clienților, fără a compromite autenticitatea și caracterul distinctiv al design-ului ei. 
+                    Astfel, fiecare proiect la care lucrează devine o poveste aparte, reflectând personalitatea și viziunea unică a clientului, 
+                    în timp ce păstrează nota sa distinctivă vintage.</p>
+                </div>
+                <div class="slide"><h1>Sfetcu Elisabeta-Inginer în construcții</h1>
+                    <p>Cu o abordare meticuloasă și orientată către detalii, Elisabeta este cunoscută pentru competența și profesionalismul său în toate aspectele
+                         procesului de construcție. De la proiectare și planificare până la supervizarea lucrărilor de construcție și gestionarea echipei, 
+                        ea asigură întotdeauna că fiecare aspect al proiectului este realizat conform celor mai înalte standarde de calitate și siguranță.</p>
+                    <p>Expertiză sa acoperă o gamă variată de domenii în construcții, inclusiv proiectarea și construcția clădirilor rezidențiale, 
+                        comerciale și industriale, precum și lucrări de infrastructură și inginerie civilă. În plus, Elisabeta este pasionată de integrarea tehnologiilor 
+                        moderne în procesele de construcție, căutând mereu să aducă inovație și eficiență în proiectele pe care le coordonează.</p>
+            
+                </div>
+                <div class="slide"><h1>Dogaru Estera-Arhitect</h1>
+                    <p>În munca sa, Estera se concentrează pe crearea unor spații contemporane, care să reflecte nevoile și personalitatea clienților săi, 
+                        dar și să integreze cele mai recente tendințe și tehnologii în designul arhitectural. Cu o abordare meticuloasă și 
+                        atenție la detalii, ea explorează forme, texturi și materiale în mod creativ pentru a crea spații unice și inspiraționale.</p>
+                    <p>Pe lângă proiectarea și amenajarea interioarelor, Estera are o experiență bogată și în designul exterior, lucrând la diverse tipuri de 
+                        proiecte, de la rezidențiale la comerciale și publice. Ea se străduiește să creeze spații care să îmbine frumusețea 
+                        estetică cu funcționalitatea practică, contribuind astfel la crearea unor medii de trai și lucru plăcute și inspiraționale.</p>
+            
+                </div>
+            <button id="nextButton">&gt;</button>
+            </div>
+        </section>
+        <section class="footer">
+            <h4>Despre noi</h4>
+            <div class="icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </section>
+        <script>
+            var navLinks=document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right="0";
+            }
+            function hideMenu(){
+                navLinks.style.right="-200";
+            }
+            let currentSlide = 0;
+            const slides = document.querySelectorAll('.slide');
+
+            function showSlide(index) {
+                slides.forEach((slide, i) => {
+                    if (i === index) {
+                        slide.style.display = 'block';
+                    } else {
+                        slide.style.display = 'none';
+                    }
+                });
+            }
+
+            document.getElementById('nextButton').addEventListener('click', function() {
+                currentSlide = (currentSlide + 1) % slides.length;
+                showSlide(currentSlide);
+            });
+
+            document.getElementById('prevButton').addEventListener('click', function() {
+                currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+                showSlide(currentSlide);
+            });
+
+            // Afișează primul slide când încarcă pagina
+            showSlide(currentSlide);
+        </script>
+    </section>
+</body>
+</html>

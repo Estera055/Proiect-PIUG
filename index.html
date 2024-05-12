@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <title>Design your home</title>
+        
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="img/logo-removebg.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fas fa-arrow-right" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">ACASA</a></li>
+                        <li><a href="about-us.html">DESPRE NOI</a></li>
+                        <li><a href="arhitectura.html">ARHITECTURA</a></li>
+                        <li><a href="design.html">DESIGN</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fas fa-list" onclick="showMenu()"></i>
+
+            </nav>
+            <div class="text-box">
+                <h1>New home owner?</h1>
+                <p>
+                    Salut! Firma 'Design your home' e perfect potrivită pentru tine dacă ești pregătit să dai naștere unui design inovativ pentru viitoarea ta locuință.
+                </p>
+                <a href="" class="button">Urmărește-ne pe social media pentru a vedea proiectele noastre!</a>
+            </div>
+        </section>
+        <section class="footer">
+            <h4>Despre noi</h4>
+            <div class="icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </section>
+        <script>
+            var navLinks=document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right="0";
+            }
+            function hideMenu(){
+                navLinks.style.right="-200";
+            }
+        </script>
+    </body>
+</html>

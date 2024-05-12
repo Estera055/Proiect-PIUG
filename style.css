@@ -1,0 +1,273 @@
+*{
+    margin:0; 
+    padding:0;
+    font-family: "PT Sans Narrow", sans-serif;
+}
+
+.header{
+    min-height:100vh;
+    width:100%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.414),rgba(234, 236, 243, 0.518)),url("img/background.jpg") ;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display:flex;
+    padding: 2% 3%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width:100px;
+}
+.nav-links{
+    flex:1;
+    text-align:right;
+}
+.nav-links ul li{
+    list-style:none;
+    display:inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color:#000000;
+    text-decoration:none;
+    font-size:15px;
+}
+.nav-links ul li::after{
+    content:'';
+    width:0%;
+    height:2px;
+    background:#000000;
+    display:block;
+    margin:auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width:100%;
+}
+.text-box{
+    width:90%;
+    color:#000000;
+    position:absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align:center;
+}
+.text-box h1{
+    font-size: 60px;
+}
+.text-box p{
+    margin:10px 0 40px;
+    font-size: 14px;
+    color:#000000;
+}
+.button{
+    display:inline-block;
+    text-decoration:none;
+    color:#000000;
+    border:1px solid #000000;
+    padding:30px 40px;
+    font-size: 15px;
+    background: transparent;
+    position:relative;
+    cursor: pointer;
+}
+.button:hover{
+    border:1 px solid #7485b4;
+    background:#7485b4;
+    transition:0.5s;
+}
+nav .fas{
+    display:none; 
+}
+@media(max-width:700px){
+    .text-box h1{
+        font-size: 20px;
+    } 
+    .nav-links ul li{
+        display:block;
+    }
+    .nav-links{
+        position:fixed;
+        background: #7485b4;
+        height: 100vh;
+        width: 200px;
+        top:0;
+        right:0;
+        text-align: left;
+        z-index:2;
+        transition: 1s;
+    }
+    nav .fas{
+        display:block;
+        color:#000000;
+        margin:10px;
+        font-size:22px;
+        cursor: pointer;
+    }
+}
+/*---about is---*/
+.sub-header{
+    height:50vh;
+    width:100%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.141),rgba(255, 255, 255, 0.141)),url("img/background.jpg") ;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color:#000000;
+}
+.sub-header h1{
+    margin-top: 100px;
+}
+.about-us{
+    width:80%;
+    margin:auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.row{
+    display: flex;
+    padding:20px 2px;
+    align-items: center;
+}
+.row img{
+    width:50%;
+    margin-right: 20px;
+}
+.principalul h1{
+    padding-top: 0;
+    flex:1;
+}
+.principalul p{
+    padding:15px 0 20px;
+    flex:1;
+}
+.redb{
+    border:1px solid #7485b4;
+    background: transparent;
+    color:#7485b4;
+}
+.redb:hover{
+    color:#000000;
+}
+.rowo {
+    width:90%;
+    display: flex;
+    margin-left:40px;
+    align-items: center;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    background:transparent; /* Adăugăm culoarea de fundal */
+    border:1px solid #000000;
+    margin-bottom: 5%; /* Adăugăm spațiu între elemente */
+    padding: 20px 12px; /* Adăugăm spațiu de pe interiorul containerului */
+    box-sizing: border-box; /* Asigurăm că padding-ul și border-ul nu măresc dimensiunea totală a containerului */
+}
+
+.rowo img {
+    max-width: 40%; /* Imaginea va ocupa jumătate din lățime */
+    margin-right: 20px; /* Adăugăm un spațiu între imagine și text */
+    transition: box-shadow 1s ease; /* Adăugăm o tranziție pentru efectul de umbrire */
+}
+
+.rowo:hover {
+    box-shadow: 0 0 30px 20px rgba(0, 0, 0, 0.2); /* Adăugăm efectul de umbrire la interacțiunea cu cursorul */
+    
+}
+
+.proiectul {
+    flex: 1; /* Textul va ocupa spațiul rămas din container */
+    background: transparent; /* Adăugăm culoarea de fundal */
+    border-radius: 10px; /* Adăugăm colțurile rotunjite */
+    margin-bottom: 5%; /* Adăugăm spațiu între elemente */
+    padding: 20px 12px; /* Adăugăm spațiu de pe interiorul containerului */
+    box-sizing: border-box;/* Asigurăm că padding-ul și border-ul nu măresc dimensiunea totală a containerului */
+}
+
+h2 {
+    font-weight: 600;
+    margin: 10px 0;
+}
+.location{
+    width:80%;
+    margin:auto;
+    padding:80px 0;
+
+}
+.location iframe{
+    width:100%;
+}
+.contacteaza{
+    width:80%;
+    margin:auto;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.column .info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Optional: Poți ajusta spațiul dintre fiecare informație */
+}
+
+.column .info i {
+    margin-right: 10px; /* Adaugă un spațiu între icon și text */
+}
+
+.column input, 
+.column textarea{
+    
+    width:100%;
+    padding:15px;
+    margin-bottom: 17px;
+    outline:none;
+    border:1px solid #000000;
+    box-sizing: border-box;
+}
+.carousel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto; /* Center the container horizontally */
+    width: 80%;
+}
+
+.prev-button,
+.next-button {
+    padding: 5px 5px;
+    font-size: 16px;
+    background-color: #7485b4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.slide {
+    width: 80%;
+    display: none;
+    border: 10px solid #ffffff;
+    border-radius: 10px; /* Rounded corners */
+    transition: box-shadow 0.3s ease; /* Add transition effect */
+}
+
+.slide:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Box shadow on hover */
+
+}
+.footer{
+    width:100%;
+    text-align:center ;
+    padding:30px 0;
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top:20px;
+    font-weight: 600;
+}

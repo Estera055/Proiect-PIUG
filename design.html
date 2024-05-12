@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <title>Design your home</title>
+        
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="img/logo-removebg.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fas fa-arrow-right" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">ACASA</a></li>
+                        <li><a href="about-us.html">DESPRE NOI</a></li>
+                        <li><a href="arhitectura.html">ARHITECTURA</a></li>
+                        <li><a href="design.html">DESIGN</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fas fa-list" onclick="showMenu()"></i>
+
+            </nav>
+            <h1>Proiecte design</h1>
+        </section>
+        <section class="Proiect">
+            <div class="rowo">
+            <img src="img/design1.jpg">
+            <div class="proiectul">
+                
+                <h2>Promenada</h2>
+                <p>Acest proiect propune o instalație spațială care ne invită să ne plimbăm în timp ce ne conectăm cu diferitele 
+                    tonuri și culori pe care vița le dobândește în diferitele sale sezoane ale anului; materializată cu lemn vopsit inserat 
+                    în pereții de stejar slavon, lumina, umbra proiectată și forma jucausă a sticlelor sub formă de ciorchini alcătuiesc impresiile în timpul turului
+                    . Un tapiserie din fibre naturale cu culorile diferitelor soiuri de struguri 
+                    și o bancă dintr-o bucată naturală de peste 4,50 de metri încadrează spațiul pentru a contempla instalația-crama.</p>
+            </div></div>
+        <div class="rowo">
+            <img src="img/design2.jpg">
+            <div class="proiectul">
+                
+                <h2>Healing Home</h2>
+                <p>În timpul discuțiilor profunde cu proprietarii casei, designerul a fost profund 
+                    influențat de spiritul lor optimist, personalitățile pozitive și simțul profund al fericirii. 
+                    Angajat în modelarea meticuloasă a unui mediu modern și primitor în casă, aspiră să transforme 
+                    locuința într-un oasis ideal în lumea reală. Acest sanctuar le permite adulților harnici, la întoarcerea acasă, 
+                    să-și mențină o percepție vie a lumii, o sinceritate autentică și o curiozitate pură, 
+                    abordând viața cu o pasiune nelimitată în timp ce explorează nenumăratele sale posibilități.</p>
+                <p>Designerul a utilizat ingenios structura în pantă adiacentă biroului pentru a crea un 
+                    spațiu unic asemănător unei compartimente de navă spațială. Iluminatul din spate, conturat de benzi LED, 
+                    pare să transforme o scenă din ficțiunea științifică în realitate.</p>
+            </div>
+        </div>
+        <div class="rowo">
+            <img src="img/design3.jpg">
+            <div class="proiectul">
+                
+                <h2>Shadow Design</h2>
+                <p>Intenția de bază a designerilor a fost de a crea un loc în care oaspeții în căutare de 
+                    pauză de la agitația vieții lor ocupate să poată odihni și relaxa într-o atmosferă ușoară de
+                     eleganță estetică. Prin aplicarea unei intenții pline de suflet la cerințele
+                     funcționale ale hotelului, au reușit să combine cu succes confortul, practicabilitatea și 
+                     frumusețea vizuală. </p>
+                <p>
+                    Realizat prin utilizarea formelor și texturilor simple și minimale îmbibate cu lumină naturală 
+                    și aranjate pentru a-și scoate la iveală cele mai bune calități inherent, o ambianță calmă și 
+                    sofisticată rezonază în fiecare spațiu al hotelului. Lemnul brut și rătanul, culorile off-white 
+                    și de toamnă, precum și alte elemente naturale au fost compuse într-un concept de design contemporan 
+                    pentru a crea un loc de rafinament
+                     relaxat, oferind un mediu de vacanță memorabil pentru fiecare oaspete care îl experimentează.</p>
+            </div>
+        </div>
+            
+
+        </section>
+        <section class="footer">
+            <h4>Despre noi</h4>
+            <div class="icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </section>
+        <script>
+            var navLinks=document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right="0";
+            }
+            function hideMenu(){
+                navLinks.style.right="-200";
+            }
+        </script>
+    </body>
+</html>
